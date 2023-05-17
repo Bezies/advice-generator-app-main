@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* H1 ACCESSIBILITY  */
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+
+/* MAIN  */
+main {
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ADVICE  */
+
+.advice-box {
+    background-color: hsl(217, 19%, 24%);
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url(images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center 220px;
+}
+
+#advice-numbers {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 5px;
+    margin-top: 40px;
+}
+
+#advice {
+    color: hsl(193, 38%, 86%);
+    font-size: 24px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+#reload {
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -25px;
+    cursor: pointer;
+}
+
+#reload:hover {
+    box-shadow: 0 0 40px hsl(150, 100%, 66%);
+}
+
+
+
+
+
+
+
+/* FOOTER  */
+
+footer {
+    background-color: hsl(218, 23%, 16%);
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+
+.attribution a {
+    color: hsl(150, 100%, 66%);
+}
+
+
+
+
+
+/* MEDIA QUERIES  */
+
+
+@media screen and (max-width: 550px) {
+    
+
+.advice-box {
+    background-color: hsl(217, 19%, 24%);
+    width: 350px;
+    height: 350px;
+    background-image: url(images/pattern-divider-mobile.svg);
+    background-position: center 270px;
+}
+
+
+}
